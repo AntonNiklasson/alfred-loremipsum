@@ -16,6 +16,7 @@ $ npm install --global alfred-loremipsum
 
 In Alfred, type `lorem`, <kbd>Enter</kbd>, and your query.
 
+![Screenshot](screenshot.png)
 
 ## License
 
