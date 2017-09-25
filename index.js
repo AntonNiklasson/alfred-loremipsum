@@ -6,7 +6,8 @@ const lorem = require('lorem-ipsum');
 const sentence = lorem({
 	units: 'sentences',
 	count: 1,
-	sentenceLowerBound: 5
+	sentenceLowerBound: 5,
+  sentenceUpperBound: 10
 });
 const paragraph = lorem({
 	units: 'paragraphs',
