@@ -1,6 +1,6 @@
 {
   "name": "alfred-loremipsum",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Grab placeholder text in Alfred",
   "license": "MIT",
   "repository": "AntonNiklasson/alfred-loremipsum",
