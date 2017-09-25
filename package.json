@@ -1,0 +1,37 @@
+{
+  "name": "alfred-loremipsum",
+  "version": "0.0.0",
+  "description": "Grab placeholder text in Alfred",
+  "license": "MIT",
+  "repository": "AntonNiklasson/alfred-loremipsum",
+  "author": {
+    "name": "Anton Niklasson",
+    "email": "niklasson.anton@gmail.com",
+    "url": "antonniklasson.se"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy"
+  ],
+  "dependencies": {
+    "alfy": "^0.6.0",
+    "lorem-ipsum": "^1.0.4"
+  },
+  "devDependencies": {
+    "xo": "^0.17.0"
+  }
+}
