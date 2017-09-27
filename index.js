@@ -3,27 +3,35 @@
 const alfy = require('alfy');
 const lorem = require('lorem-ipsum');
 
-const sentence = lorem({
-  units: 'sentences',
-  count: 1,
-  sentenceLowerBound: 5,
-  sentenceUpperBound: 10
-});
-const paragraph = lorem({
-  units: 'paragraphs',
-  paragraphLowerBound: 3,
-  paragraphUpperBound: 6
-});
+function generateSentenceOutput(count) {
+  return {
+    title: count > 1 ? `${count} Sentences` : 'Sentence',
+    subtitle: 'Press enter to copy',
+    arg: lorem({
+      units: 'sentences',
+      count,
+      sentenceLowerBound: 5,
+      sentenceUpperBound: 15
+    })
+  };
+}
+
+function generateParagraphOutput(count) {
+  return {
+    title: count > 1 ? `${count} Paragraphs` : 'Paragraph',
+    subtitle: 'Press enter to copy',
+    arg: lorem({
+      units: 'paragraphs',
+      count,
+      paragraphLowerBound: 5,
+      paragraphUpperBound: 15
+    })
+  };
+}
+
+const count = parseInt(alfy.input) || 1;
 
 alfy.output([
-  {
-    title: 'Sentence',
-    subtitle: 'Enter to copy the sentence',
-    arg: sentence
-  },
-  {
-    title: 'Paragraph',
-    subtitle: 'Enter to copy the paragraph',
-    arg: paragraph
-  }
+  generateParagraphOutput(count),
+  generateSentenceOutput(count)
 ]);

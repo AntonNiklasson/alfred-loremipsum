@@ -16,6 +16,8 @@ $ npm install --global alfred-loremipsum
 
 In Alfred, type `lorem`, <kbd>Enter</kbd>, and your query.
 
+Add an optional number to grab more than one paragraph or sentence.
+
 ![Screenshot](screenshot.png)
 
 ## License
