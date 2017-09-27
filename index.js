@@ -3,11 +3,6 @@
 const alfy = require('alfy');
 const lorem = require('lorem-ipsum');
 
-const sentenceLowerBound = 5;
-const sentenceUpperBound = 10;
-const paragraphLowerBound = 3;
-const paragraphUpperBound = 6;
-
 function generateSentenceOutput(count) {
   return {
     title: count > 1 ? `${count} Sentences` : 'Sentence',
@@ -15,8 +10,8 @@ function generateSentenceOutput(count) {
     arg: lorem({
       units: 'sentences',
       count,
-      sentenceLowerBound,
-      sentenceUpperBound
+      sentenceLowerBound: 5,
+      sentenceUpperBound: 15
     })
   };
 }
@@ -28,10 +23,8 @@ function generateParagraphOutput(count) {
     arg: lorem({
       units: 'paragraphs',
       count,
-      sentenceLowerBound,
-      sentenceUpperBound,
-      paragraphLowerBound,
-      paragraphUpperBound
+      paragraphLowerBound: 5,
+      paragraphUpperBound: 15
     })
   };
 }
