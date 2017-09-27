@@ -29,7 +29,7 @@ function generateParagraphOutput(count) {
   };
 }
 
-const count = parseInt(alfy.input) || 1;
+const count = parseInt(alfy.input, 10) || 1;
 
 alfy.output([
   generateParagraphOutput(count),
