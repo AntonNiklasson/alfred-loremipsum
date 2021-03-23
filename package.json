@@ -27,7 +27,7 @@
     "alfy"
   ],
   "dependencies": {
-    "alfy": "^0.9.0",
+    "alfy": "^0.10.0",
     "lorem-ipsum": "^1.0.4"
   }
 }
